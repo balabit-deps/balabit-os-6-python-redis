@@ -1,0 +1,7 @@
+Depends: @, redis-server, python-pytest, python-setuptools
+Restrictions: allow-stderr
+Test-Command: rm -rf redis/*; python setup.py test
+
+Depends: @, redis-server, python3-pytest, python3-setuptools
+Restrictions: allow-stderr
+Test-Command: rm -rf redis/*; python3 setup.py test
